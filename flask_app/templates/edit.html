@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_edit.css') }}">
+    <title>New Fact</title>
+</head>
+
+<body>
+    <div id="create">
+        <div class="head">
+            <a href="/logout" class="logout_button">Logout</a>
+        </div>
+        <div class="alert">
+            {% with messages = get_flashed_messages(category_filter=['details']) %}
+            {% if messages %}
+            {% for message in messages %}
+            <p class="alert alert-danger card invalid-feedback mx-0 mb-0 p-1 ">{{message}}</p>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </div>
+        <div class="edit_container">
+            <form action="/update/{{fact.id}}" method="post" class="form">
+                <h2 class="head">Edit a Fact!</h2>
+                <div class="form-group">
+                    <label for="fact" class="form-group"><strong>Fact:</strong></label>
+                    <textarea name="fact" id="fact" rows="5" cols="25">{{fact.fact}}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="resource"><strong>Resource:</strong></label>
+                    <input type="text" name="resource" id="resource" size="26" value="{{fact.resource}}">
+                </div>    
+                    <div class="two_buttons">
+                        <a href="/show" class="cancel_button">Cancel</a>
+                        <input type="submit" value="Update" class="update_button">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

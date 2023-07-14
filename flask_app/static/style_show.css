@@ -1,0 +1,200 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    background: #efefef;    
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.top_part {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items:center;
+    height: 150px;
+    background: #000000;    
+    width: 1535px;
+    color: #ffffff;
+} 
+
+.top{
+    width: 1500px;
+    text-align: right;
+}
+
+.bottom_part {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height: 610px;
+    width: 1535px;
+}
+
+.logout_button{
+    color: #000000;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #8d4394;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    box-shadow: 0 0 25px #8d4394;
+}
+
+.create_button{
+    color: #000000;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #f7906e;
+    border: 2px solid #000000;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    box-shadow: 0 0 25px #f7906e;
+}
+
+.game_button{
+    color: #000000;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #b2aab3;
+    border: 2px solid #000000;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    box-shadow: 0 0 25px #b2aab3;
+    
+}
+
+.view_button{
+    color: #000000;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #74a3c9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid #000000;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    box-shadow: 0 0 25px #74a3c9;
+}
+
+.edit_button{
+    color: #000000;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #eaee8c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid #000000;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    box-shadow: 0 0 25px #eaee8c;
+}
+
+.delete_button{
+    color: #000000;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #d95252;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid #000000;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    box-shadow: 0 0 25px #d95252;
+}
+
+.facts {
+    text-align: center;
+    font-family: cursive;
+
+}
+
+.facts h2 {
+    font-size: 20px;
+}
+
+.facts p {
+    font-size: 15px;
+    color: #8e8c8e;
+    text-align: end;
+    margin-bottom: 30px;
+}
+
+.poster {
+    float: right;
+}
+
+
+.bottom{
+    display: inline-flex;
+}
+
+
+.three_buttons {
+    text-align: end;
+}
+
+.v_button {
+    text-align: end;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+
+
