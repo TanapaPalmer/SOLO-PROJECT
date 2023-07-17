@@ -1,13 +1,17 @@
+/* BODY */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0px;
 }
-
 #dashboard {
     display:flex;
     align-items:center;
 } 
+/* BODY */
 
+/* --------------------------------------------------- */
+
+/* LOGIN SECTION */
 .left {
     display:flex;
     justify-content: center;
@@ -17,7 +21,6 @@ body {
     background: #000000;    
     width: 600px;
 }
-
 .login {
     display:flex;
     justify-content: center;
@@ -27,48 +30,30 @@ body {
     width: 450px;
     padding: 20px 0px 40px;
 }
-
-.form-group input {
-    margin-left: 40px;
-    border: 2px solid #000000;
-}
-
-.form-group{
+.form_group_login {
     display: flex;
     justify-content: space-between;
     padding-top: 25px;  
 }
-
-.right {
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items:center;
-    height: 660px;
-    background: #ffffff;    
-    width:1000px;
+.form_group_login input {
+    margin-left: 40px;
+    border: 2px solid #000000;
 }
-
+.login_label {
+    font-size: 20px;
+}
 .left h1 {
     color: #ffffff;
     font-size: 60px;
 }
-
 .left h2 {
     text-align: center;
     font-size: 30px;
 }
-
-.right h1 {
-    font-size: 60px;
+.alert_login {
+    color: #bc5285;
 }
-
-
-label {
-    font-size: 20px;
-}
-
-.button {
+.login_button {
     color: #ffffff;
     margin-top: 30px;
     padding: 5px 10px;
@@ -81,7 +66,49 @@ label {
     background: #000000;
     float: right;
 }
+/* LOGIN SECTION */
 
-.alert {
+/* --------------------------------------------------- */
+
+/* REGISTER SECTION */
+.right {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    height: 660px;
+    background: #ffffff;    
+    width:1000px;
+}
+.form_group_register {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;  
+}
+.form_group_register input {
+    margin-left: 40px;
+    border: 2px solid #000000;
+}
+.register_label {
+    font-size: 20px;
+}
+.right h1 {
+    font-size: 60px;
+}
+.alert_register {
     color: #bc5285;
 }
+.register_button {
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #000000;
+    float: right;
+}
+/* REGISTER SECTION */

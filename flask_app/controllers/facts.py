@@ -1,17 +1,10 @@
 from flask_app import app
 from flask import render_template, redirect, request, session, flash
 from flask_app.models.fact import Fact, User
-from flask_app.models import fact, user
-
-# @app.route('/show')
-# def home():
-#     if 'user_id' not in session:
-#         return redirect('/')
-#     user = {
-#         'id' : session['user_id']
-#     }
-#     all_facts = fact.Fact.get_all()
-#     return render_template('show.html', user=user, facts=Fact.get_by_id())
+from flask_app.models import fact, user, comment
+from flask_app.models.comment import Comment
+from flask_app.controllers import games
+from flask_app.controllers import comments
 
 @app.route('/show')
 def home():
@@ -22,15 +15,6 @@ def home():
         return redirect('/logout')
         
     return render_template('show.html', user=user, facts=Fact.get_all())
-
-# @app.route('/show')
-# def home():
-#     if 'user_id' not in session:
-#         return render_template('show.html',
-#             user = user.User.get_by_id({"id":session['user_id']}),
-#             all_facts = fact.Fact.get_all()
-#             )
-#     return redirect('/dashboard')
 
 
 @app.route('/create')
@@ -76,6 +60,7 @@ def update(id):
 
     data = {
         'id': id,
+        'user_id': session['user_id'],
         'fact': request.form['fact'],
         'resource': request.form['resource'],
     }
@@ -83,20 +68,33 @@ def update(id):
     return redirect('/show')
 
 
-@app.route('/delete/<int:fact_id>')
-def delete(fact_id):
+@app.route('/delete/<int:id>')
+def delete(id):
     if 'user_id' not in session:
-        return redirect('/')
+        return redirect('/dashboard')
 
-    Fact.delete({'id':fact_id})
+    Fact.delete({'id':id})
     return redirect('/show')
+
+
+# @app.route('/show/<int:id>')
+# def show(id):
+#     if 'user_id' not in session:
+#         return redirect('/dashboard')
+    
+#     user = User.get_by_id({"id":session['user_id']})
+    
+#     return render_template('view.html', user=user, fact=Fact.get_by_id({'id': id}))
+
 
 
 @app.route('/show/<int:id>')
 def show(id):
     if 'user_id' not in session:
-        return redirect('/')
+        return redirect('/dashboard')
     
-    user = User.get_by_id({"id":session['user_id']})
+    data = {
+        'id' : id
+    }
     
-    return render_template('each_fact.html', user=user, fact=Fact.get_by_id({'id': id}))
+    return render_template('view.html', fact=Fact.get_by_id(data))

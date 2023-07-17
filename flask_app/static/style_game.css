@@ -1,0 +1,143 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #000000;
+
+}
+
+#game {
+    margin-top: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+
+.show_one {
+    width: 700px;
+}
+
+.head {
+    color: rgb(158, 75, 150);
+    text-align: left;
+    font-family: cursive;
+    /* text-shadow: 0 0 10px #ffffff; */
+}
+
+.poster {
+    /* text-align: right; */
+    color: #4e4d53;
+}
+
+.resource {
+    /* text-align: right; */
+    color: #4e4d53;
+}
+
+span {
+    /* text-align: right; */
+    color: rgb(75, 96, 158);
+}
+
+.top_buttons {
+    display: flex;
+    justify-content: end;
+}
+
+h3{
+    text-align: center;
+    padding: 25px;;
+    font-size: 30px;
+    font-family: cursive;
+    /* color: #393636; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+.game_container {
+    padding: 5px;
+    margin: 40px 0px 40px;
+    display:flex;
+    justify-content: center;
+    /* text-align: end; */
+    height: 300px;
+    background: #e7e2e2;    
+    width: 900px;
+    /* border: 2px solid #7d7d7d; */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    box-shadow: 0 0 35px #a3a3a3;
+
+} 
+
+.home_button{
+    color: #000000;
+    margin-right: 10px;
+    /* margin-top: 25px; */
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: rgb(158, 75, 150);
+    border: 2px solid rgb(158, 75, 150);
+    /* letter-spacing: 4px; */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    /* box-shadow: 0 0 25px #3f5193; */
+    font-size: 15px;
+}
+
+.logout_button{
+    color: #ffffff;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #000000;
+    border: 2px solid #ffffff;
+    float: right;
+    /* letter-spacing: 4px; */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    /* box-shadow: 0 0 25px #8d4394; */
+}
+
+
+
+
+
+.submit_button{
+    color: #000000;
+    margin-top: 50px;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #ecaa7f;
+    border: 2px solid #000000;
+    /* letter-spacing: 4px; */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    /* box-shadow: 0 0 25px #3f5193; */
+    font-size: 15px;
+}

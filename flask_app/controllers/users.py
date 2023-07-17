@@ -26,8 +26,8 @@ def submit():
     if not User.is_valid_user(request.form):
         return redirect('/dashboard')
     data={
-        "user_name":request.form["user_name"].lower(),
-        "email":request.form["email"].lower(),
+        "user_name":request.form["user_name"],
+        "email":request.form["email"],
         "password":bcrypt.generate_password_hash(request.form["password"])
     }
 
@@ -47,6 +47,8 @@ def login():
         return redirect('/dashboard')
     session['user_id'] = user.id
     return redirect('/show')
+
+
 
 @app.route("/logout")
 def logout():

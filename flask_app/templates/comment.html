@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----LINK WITH CSS FILE----- -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_comment.css') }}">
+    <!-- -----LINK WITH CSS FILE----- -->
+
+    <title>Comment</title>
+</head>
+
+<body>
+    <div id="comment">
+        <div class="head">
+            <a href="/logout" class="logout_button">Logout</a>
+        </div>
+
+        <!-- -----FLASH MESSAGES ALERT----- -->
+        <div>
+            {% with messages = get_flashed_messages(category_filter=['comment']) %}
+            {% if messages %}
+            {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </div>
+        <!-- -----FLASH MESSAGES ALERT----- -->
+
+        <!-- COMMENT SECTION -->
+        <div class="comment_container">
+            <form action="/comment/process" method="post" class="form">
+                <!-- <input type="hidden" name="fact_id" value="{{facts.id}}"> -->
+                <h2 class="head_text">Comment</h2>
+                <div class="form_group">
+                    <label for="comment"><strong>Comment:</strong></label>
+                    <textarea name="comment" id="comment" rows="5" cols="25"
+                        placeholder="What do you think about this fact?"></textarea>
+                </div>
+                <div class="two_buttons">
+                    <a href="/show" class="cancel_button">Cancel</a>
+                    <input type="submit" value="Submit" class="submit_button">
+                </div>
+            </form>                
+        </div>
+        <!-- COMMENT SECTION -->
+
+    </div>
+    </div>
+</body>
+
+</html>
+

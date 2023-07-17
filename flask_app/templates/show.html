@@ -5,37 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----LINK WITH CSS FILE----- -->    
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style_show.css')}}">
+    <!-- -----LINK WITH CSS FILE----- -->
+    
     <title>Show All Facts</title>
 </head>
 
 <body>
+
+    <!-- -----TOP PART----- -->
     <div class="top_part">
         <div class="top">
             <a href="/logout" class="logout_button">Logout</a>
-            <h1 class="text-success my-3">DID YOU KNOW...</h1>
+            <h1>DID YOU KNOW...</h1>
         </div>
     </div>
+    <!-- -----TOP PART----- -->
+
+    <!-- -----BOTTOM PART----- -->
     <div class="bottom_part">
         <div class="bottom">
             <a href="/create" class="create_button">Create A Fact</a>
-            <p>or</p>
+            <p class="or_word">or</p>
             <a href="/game" class="game_button">Play a Game</a>
         </div>
+
+        <!-- -----SHOW ALL FACTS----- -->
         <div class="facts">
             {% for fact in facts %}
             <hr>
-            <h2><strong>{{fact.fact}}</strong></h2>
+
+            <!-- ALL FACTS -->
+            <h2>{{fact.fact}}</h2>
+            <!-- ALL FACTS -->
+
+            <!-- SHOW THE NAME OF THE POSTER "Posted by: Name" - IF THE FACT POSTED BY LOGGED-IN USER - SHOW "Posted by: Me"-->
             {% if session['user_id'] != fact.poster.id %}                
             <p><strong>Posted by:</strong> {{fact.poster.user_name}}</p>
             {% else %}
-            <p><strong>Posted by:</strong>Me</p>
+            <p><strong>Posted by:</strong> Me</p>
             {% endif %}
+            <!-- SHOW THE NAME OF THE POSTER "Posted by: Name" - IF THE FACT POSTED BY LOGGED-IN USER - SHOW "Posted by: Me"-->
+
+            <!-- -----SHOW ONLY VIEW BUTTON IF THE FACT WAS NOT POSTED BY LOGGED-IN USER ----- -->
             {% if session['user_id'] != fact.poster.id %}
             <div class="v_button">
                 <a href="/show/{{fact.id}}" class="view_button">View</a>
             </div>
             {% endif %}
+            <!-- -----SHOW ONLY VIEW BUTTON IF THE FACT WAS NOT POSTED BY LOGGED-IN USER ----- -->
+
+            <!-- -----SHOW ALL 3 BUTTONS (VIEW, EDIT, AND DELETE) IF THE FACT POSTED BY LOGGED-IN USER ----- -->
             <div class="three_buttons">
                 {% if session['user_id'] == fact.poster.id %}
                 <a href="/show/{{fact.id}}" class="view_button">View</a>
@@ -43,9 +65,15 @@
                 <a href="/delete/{{fact.id}}" class="delete_button">Delete</a>
                 {% endif %}
             </div>
+            <!-- -----SHOW ALL 3 BUTTONS (VIEW, EDIT, AND DELETE) IF THE FACT POSTED BY LOGGED-IN USER ----- -->
+
             {% endfor %}
         </div>
+        <!-- -----SHOW ALL FACTS----- -->
+
     </div>
+    <!-- -----BOTTOM PART----- -->
+
 </body>
 
 </html>

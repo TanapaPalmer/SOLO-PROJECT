@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----LINK WITH CSS FILE----- -->    
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_edit.css') }}">
-    <title>New Fact</title>
+    <!-- -----LINK WITH CSS FILE----- -->    
+    
+    <title>Edit Fact</title>
 </head>
 
 <body>
@@ -14,23 +18,32 @@
         <div class="head">
             <a href="/logout" class="logout_button">Logout</a>
         </div>
+
+        <!-- -----FLASH MESSAGES ALERT----- -->
         <div class="alert">
             {% with messages = get_flashed_messages(category_filter=['details']) %}
             {% if messages %}
             {% for message in messages %}
-            <p class="alert alert-danger card invalid-feedback mx-0 mb-0 p-1 ">{{message}}</p>
+            <p>{{message}}</p>
             {% endfor %}
             {% endif %}
             {% endwith %}
         </div>
+        <!-- -----FLASH MESSAGES ALERT----- -->
+
+        <!-- EDIT SECTION -->
         <div class="edit_container">
             <form action="/update/{{fact.id}}" method="post" class="form">
                 <h2 class="head">Edit a Fact!</h2>
-                <div class="form-group">
-                    <label for="fact" class="form-group"><strong>Fact:</strong></label>
+                <div class="form_group">
+                    <label for="fact"><strong>Fact:</strong></label>
+
+                    <!-- THE FACT THAT HAS BEEN CREATED WILL SHOW FOR THE USER TO BE ABLE TO SEE AND EDIT -->
                     <textarea name="fact" id="fact" rows="5" cols="25">{{fact.fact}}</textarea>
+                    <!-- THE FACT THAT HAS BEEN CREATED WILL SHOW FOR THE USER TO BE ABLE TO SEE AND EDIT -->
+
                 </div>
-                <div class="form-group">
+                <div class="form_group">
                     <label for="resource"><strong>Resource:</strong></label>
                     <input type="text" name="resource" id="resource" size="26" value="{{fact.resource}}">
                 </div>    
@@ -39,9 +52,10 @@
                         <input type="submit" value="Update" class="update_button">
                     </div>
                 </div>
-
             </form>
         </div>
+        <!-- EDIT SECTION -->
+
     </div>
 </body>
 </html>

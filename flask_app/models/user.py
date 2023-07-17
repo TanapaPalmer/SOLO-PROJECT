@@ -2,6 +2,7 @@ from flask_app.config.mysqlconnection import connectToMySQL
 from flask import flash
 from flask_app.models import fact
 from flask_app.models import user
+from flask_app.models import comment
 import re
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$') 
 
@@ -13,7 +14,7 @@ class User:
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
         # self.facts=[]
-        # self.comments=[]
+        self.comments=[]
 
     @staticmethod
     def is_valid_user(data):
@@ -59,13 +60,13 @@ class User:
             return False
         return cls(results[0])
     
-
-
     @classmethod
     def get_by_id(cls,data):
         query = "SELECT * FROM users WHERE users.id = %(id)s;"
         results = connectToMySQL('did_you_know').query_db(query,data)
         return cls(results[0])
+
+
 
     # @classmethod
     # def getOne(cls,data):

@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- -----LINK WITH CSS FILE----- -->
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style_game.css')}}">
-    <!-- -----LINK WITH CSS FILE----- -->
-
     <title>Game</title>
 </head>
 
@@ -21,17 +17,17 @@
         </div>
         <div class="game_container">
             <div class="question">
-                <h3>How long can Stig Severinsen hold his breath underwater?</h3>
+                <h3>What's the capital city of Australia?</h3>
                 <form action="/game/1" method="post" class="answer_input">
                     <div class="answers">
-                        <input type="radio" id="answer_one" name="answer_1" value="1 minute">
-                        <label for="answer_one">1 minute</label>
-                        <input type="radio" id="answer_two" name="answer_2" value="2 minutes">
-                        <label for="answer_two">5 minutes</label>
-                        <input type="radio" id="answer_three" name="answer_3" value="15 minutes">
-                        <label for="answer_three">15 minutes</label>
-                        <input type="radio" id="answer_four" name="answer_4" value="22 minutes">
-                        <label for="answer_four">22 minutes</label>
+                    <input type="radio" id="answer_one" value="answer_one">
+                    <label for="answer_one">Sydney</label>
+                    <input type="radio" id="answer_two" value="answer_one" name="answer_2">
+                    <label for="answer_two">Canberra</label>
+                    <input type="radio" id="answer_three" value="answer_one">
+                    <label for="answer_three">Melbourne</label>
+                    <input type="radio" id="answer_four" value="answer_one">
+                    <label for="answer_four">Perth</label>
                     </div>
                     <input type="submit" value="Submit" class="submit_button">
                 </form>
@@ -39,5 +35,4 @@
         </div>
     </div>
 </body>
-
 </html>

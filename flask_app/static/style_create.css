@@ -1,19 +1,39 @@
+/* BODY */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display:flex;
     justify-content: center;
     align-items: center; 
-    background-color: #efefef;
-}
-
-h2{
-    font-size: 30px;
-    font-family: cursive;
-    color: #ffffff;
     background-color: #000000;
-
+    height: 700px;
 }
+/* BODY */
 
+/* --------------------------------------------------- */
+
+/* LOGOUT BUTTON */
+.logout_button {
+    color: #ffffff;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #000000;
+    border: 2px solid #ffffff;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+/* LOGOUT BUTTON */
+
+/* --------------------------------------------------- */
+
+/* CREATE CONTAINER */
 .create_container {
     margin-top: 40px;
     display:flex;
@@ -29,32 +49,32 @@ h2{
     transition-property: box-shadow;
     box-shadow: 0 0 25px #000000;
 } 
-
-.logout_button{
-    color: #000000;
-    padding: 5px 10px;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: 2px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.5s;
-    background: #8d4394;
-    border: 2px solid #000000;
-    float: right;
-    letter-spacing: 4px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.5s;
-    transition-property: box-shadow;
-    box-shadow: 0 0 25px #8d4394;
+h2 {
+    font-size: 30px;
+    font-family: cursive;
+    color: #ffffff;
+    background-color: #000000;
 }
-
+.form_group {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;  
+}
+.form_group input {
+    margin-left: 40px;
+    border: 2px solid #000000;
+}
+.form_group textarea {
+    margin-left: 40px;
+    border: 2px solid #000000;
+}
+.alert {
+    color: #bc5285;
+}
 .two_buttons {
     text-align: right;
 }
-
-.create_button{
+.create_button {
     color: #000000;
     margin-top: 25px;
     padding: 5px 10px;
@@ -64,17 +84,14 @@ h2{
     cursor: pointer;
     border-radius: 5px;
     transition: 0.5s;
-    background: #3f5193;
+    background: #556394;
     border: 2px solid #000000;
-    letter-spacing: 4px;
     cursor: pointer;
     border-radius: 5px;
     transition: 0.5s;
     transition-property: box-shadow;
-    box-shadow: 0 0 25px #3f5193;
+    font-size: 15px;
 }
-
-
 .cancel_button {
     color: #000000;
     margin-top: 25px;
@@ -88,30 +105,9 @@ h2{
     background: #bc5285;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 2px solid #000000;
-    letter-spacing: 4px;
     cursor: pointer;
     border-radius: 5px;
     transition: 0.5s;
     transition-property: box-shadow;
-    box-shadow: 0 0 25px #bc5285;
 }
-
-.form-group{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;  
-}
-
-.form-group input {
-    margin-left: 40px;
-    border: 2px solid #000000;
-}
-
-.form-group textarea {
-    margin-left: 40px;
-    border: 2px solid #000000;
-}
-
-.alert {
-    color: #bc5285;
-}
+/* CREATE CONTAINER */

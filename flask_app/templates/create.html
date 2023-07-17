@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----LINK WITH CSS FILE----- -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_create.css') }}">
+    <!-- -----LINK WITH CSS FILE----- -->
+
     <title>New Fact</title>
 </head>
 
@@ -14,33 +18,41 @@
         <div class="head">
             <a href="/logout" class="logout_button">Logout</a>
         </div>
-                <div>
-                    {% with messages = get_flashed_messages(category_filter=['details']) %}
-                    {% if messages %}
-                    {% for message in messages %}
-                    <p class="alert alert-danger card invalid-feedback mx-0 mb-0 p-1 ">{{message}}</p>
-                    {% endfor %}
-                    {% endif %}
-                    {% endwith %}
-                </div>
+
+        <!-- -----FLASH MESSAGES ALERT----- -->
+        <div class="alert">
+            {% with messages = get_flashed_messages(category_filter=['details']) %}
+            {% if messages %}
+            {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </div>
+        <!-- -----FLASH MESSAGES ALERT----- -->
+
+        <!-- CREATE SECTION -->
         <div class="create_container">
             <form action="/create/process" method="post" class="form">
-                <h2 class="head">Create a Fact!</h2>
-                <div class="form-group">
-                    <label for="fact" class="form-group"><strong>Fact:</strong></label>
-                    <textarea name="fact" id="fact" rows="5" cols="25"></textarea>
+                <h2 class="head_text">Create a Fact!</h2>
+                <div class="form_group">
+                    <label for="fact"><strong>Fact:</strong></label>
+                    <textarea name="fact" id="fact" rows="5" cols="25" placeholder="Did you know..."></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form_group">
                     <label for="resource"><strong>Resource:</strong></label>
                     <input type="text" name="resource" id="resource" size="26">
-                </div>    
-                    <div class="two_buttons">
-                        <a href="/show" class="cancel_button">Cancel</a>
-                        <input type="submit" value="Create" class="create_button">
-                    </div>
                 </div>
-            </form>
+                <div class="two_buttons">
+                    <a href="/show" class="cancel_button">Cancel</a>
+                    <input type="submit" value="Create" class="create_button">
+                </div>
+            </form>                
         </div>
+        <!-- CREATE SECTION -->
+
+    </div>
     </div>
 </body>
+
 </html>
