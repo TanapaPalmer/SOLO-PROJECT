@@ -25,37 +25,11 @@
 
   <div>
   <p><strong>HOW MY PROJECT LOOKS LIKE</strong></p>
-    <br>
-    <br>
-    <p>Home:</p>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/b3dd91f1-ba6d-4594-a55c-3cfe23cb88b8" alt="html" height="150"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/28b33fd6-584b-413a-806b-a7577db05822" alt="html" height="150"/>
-    <br>
-    <br>
-    <p>Login & Register:</p>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/a0fb21e4-7608-40e2-99d9-32a288f88af2" alt="html" height="150"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f964a83c-08d8-42a3-a3a4-b0afbae1b256" alt="html" height="150"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f6f68b0d-f0c3-46e6-afba-ab294544c455" alt="html" height="150"/>
-    <br>
-    <br>
-    <p>Dashboard:</p>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/6f344517-fcf9-4550-adb4-dab38d67b5dd" alt="html" height="150"/>
-    <br>
-    <br>
-    <p>Create, Edit and Update:</p>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f3efc3b7-6f47-4c99-84e0-e9d9c2b48413" alt="html" height="150"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/6bc09299-1758-4f5d-92e4-44a0537fd767" alt="html" height="150"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/772124f6-7314-4556-a452-cd39a45931fb" alt="html" height="150"/>
-    <br>
-    <br>
-    <p>Show:</p>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/90537732-4101-49a1-9eaf-c65e7e87dc36" alt="html" height="150"/>
-    <br>
-    <br>
-    <p>Game:</p>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f76cd9b2-3804-4d96-a895-19069e682b11" alt="html" height="150"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/df751c23-9501-4e18-8a37-b40bc31f7d34" alt="html" height="150"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/71d943ee-9b10-47cd-b0df-862d155d7e62" alt="html" height="150"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/b3dd91f1-ba6d-4594-a55c-3cfe23cb88b8" alt="html" height="100"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/a0fb21e4-7608-40e2-99d9-32a288f88af2" alt="html" height="100"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/6f344517-fcf9-4550-adb4-dab38d67b5dd" alt="html" height="100"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f3efc3b7-6f47-4c99-84e0-e9d9c2b48413" alt="html" height="100"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f76cd9b2-3804-4d96-a895-19069e682b11" alt="html" height="100"/>
   </div>
 </div>
 
