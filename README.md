@@ -1,21 +1,3 @@
-![Screenshot (26)](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/82272e9d-5bcb-4941-8c5c-ed0ffa646241)
-![Uploading Screenshot (25).png…]()
-![Uploading Screenshot (24).png…]()
-![Screenshot (23)](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/688cf06b-0ada-492c-b250-6eed72d80cd1)
-![Uploading Screenshot (36).png…]()
-![Uploading Screenshot (35).png…]()
-![Uploading Screenshot (34).png…]()
-![Uploading Screenshot (33).png…]()
-![Uploading Screenshot (32).png…]()
-![Screenshot (36)](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/60468ef2-5312-4fd6-a190-1f15c36a1310)
-![Uploading Screenshot (35).png…]()
-![Uploading Screenshot (34).png…]()
-![Uploading Screenshot (33).png…]()
-![Screenshot (32)](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/66500469-33c9-406d-a926-263d798f2949)
-![Screenshot (30)](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/e00fde8d-6f58-4f2e-9618-7c50ea7dc6dc)
-![Uploading Screenshot (27).png…]()
-![Uploading Screenshot (26).png…]()
-![Uploading Screenshot (25).png…]()
 <div>
   <h3>MY SOLO PROJECT</h3>
   <p><strong>"DID YOU KNOW PROJECT" IS ONE OF MY FINAL PROJECT WITH CODING DOJO</strong></p>
@@ -42,13 +24,29 @@
   <hr>
 
   <div>
-    <p><strong>MY WIREFRAME:</strong></p>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/3ee1f159-5a4f-4561-8f30-8afd00e20a8e" alt="html" height="350"/>
-  </div>
-
-  <div>
   <p><strong>HOW MY PROJECT LOOKS LIKE</strong></p>
-    <img src="" alt="html" height="350"/>
+    <p>Home:</p>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/b3dd91f1-ba6d-4594-a55c-3cfe23cb88b8" alt="html" height="250"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/28b33fd6-584b-413a-806b-a7577db05822" alt="html" height="250"/>
+    <p>Login & Register:</p>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/a0fb21e4-7608-40e2-99d9-32a288f88af2" alt="html" height="250"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f964a83c-08d8-42a3-a3a4-b0afbae1b256" alt="html" height="250"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f6f68b0d-f0c3-46e6-afba-ab294544c455" alt="html" height="250"/>
+    <p>Dashboard:</p>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/6f344517-fcf9-4550-adb4-dab38d67b5dd" alt="html" height="250"/>
+    <p>Create, Edit and Update:</p>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f3efc3b7-6f47-4c99-84e0-e9d9c2b48413" alt="html" height="250"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/6bc09299-1758-4f5d-92e4-44a0537fd767" alt="html" height="250"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/772124f6-7314-4556-a452-cd39a45931fb" alt="html" height="250"/>
+    <p>Show:</p>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/90537732-4101-49a1-9eaf-c65e7e87dc36" alt="html" height="250"/>
+    <p>Game:</p>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f76cd9b2-3804-4d96-a895-19069e682b11" alt="html" height="250"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/df751c23-9501-4e18-8a37-b40bc31f7d34" alt="html" height="250"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/71d943ee-9b10-47cd-b0df-862d155d7e62" alt="html" height="250"/>
   </div>
-  
 </div>
+
+
+
+
