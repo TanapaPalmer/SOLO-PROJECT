@@ -1,20 +1,23 @@
 from flask_app.config.mysqlconnection import connectToMySQL
 from flask import flash
-from flask_app.models import fact
-from flask_app.models import user
-from flask_app.models import comment
 import re
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$') 
+
+# ---------------------------------------------------
+# "User" CLASS
 
 class User:
     def __init__(self,data):
         self.id = data['id']
         self.user_name = data['user_name']
         self.email = data['email']
+        self.password = data['password']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
-        # self.facts=[]
         self.comments=[]
+
+# ---------------------------------------------------
+# VALIDATION
 
     @staticmethod
     def is_valid_user(data):
@@ -24,8 +27,8 @@ class User:
         if len(results) >= 1:
             flash("Email already taken.")
             is_valid = False
-        if len(data["user_name"]) < 2:
-            flash("First name must be at least 3 characters.","register")
+        if len(data["user_name"]) < 3:
+            flash("User name must be at least 3 characters.","register")
             is_valid = False
         if not EMAIL_REGEX.match(data["email"]):
             flash("Invalid email address.","register")
@@ -38,6 +41,9 @@ class User:
             is_valid = False
         return is_valid
 
+# ---------------------------------------------------
+# GET ALL USERS
+
     @classmethod
     def get_all(cls):
         query = "SELECT * FROM users;"
@@ -47,10 +53,16 @@ class User:
             users.append(cls(row))
         return users
 
+# ---------------------------------------------------
+# SAVE USER NAME, EMAIL AND PASSWORD
+
     @classmethod
     def save(cls,data):
         query = "INSERT INTO users (user_name, email, password) VALUES (%(user_name)s, %(email)s, %(password)s);"
         return connectToMySQL('did_you_know').query_db(query, data)
+    
+# ---------------------------------------------------
+# GET EMAIL
 
     @classmethod
     def get_by_email(cls,data):
@@ -59,24 +71,12 @@ class User:
         if len(results) < 1:
             return False
         return cls(results[0])
-    
+
+# ---------------------------------------------------
+# GET USER BY USER ID
+
     @classmethod
     def get_by_id(cls,data):
         query = "SELECT * FROM users WHERE users.id = %(id)s;"
         results = connectToMySQL('did_you_know').query_db(query,data)
         return cls(results[0])
-
-
-
-    # @classmethod
-    # def getOne(cls,data):
-    #     query="SELECT * FROM users LEFT JOIN facts ON users.id = facts.user_id WHERE users.id = %(id)s;"
-    #     results = connectToMySQL(cls).query_db(query,data)
-    #     if results:
-    #         this_user = cls(results[0])
-    #         for row in results:
-    #             if row['user_id'] == None:
-    #                 break
-    #                 this_user.facts.append(fact.Fact(row))
-    #             return this_user
-    #         return False

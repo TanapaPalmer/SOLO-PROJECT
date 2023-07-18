@@ -3,6 +3,9 @@ from flask import flash
 from flask_app.models import fact, user, comment
 
 
+# ---------------------------------------------------
+# "Comment" CLASS
+
 class Comment:
     def __init__(self, data):
         self.id = data['id']
@@ -12,7 +15,9 @@ class Comment:
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
         self.commenter = None
-        # self.comments = []
+
+# ---------------------------------------------------
+# VALIDATION
 
     @staticmethod
     def validate_comment(data):
@@ -21,34 +26,20 @@ class Comment:
             flash("Comment must be at least 3 characters long","comment")
             is_valid = False
         return is_valid
-    
+
+# ---------------------------------------------------
+# SAVE COMMENT AND (HIDDEN) FACT ID AND USER ID
+
     @classmethod
     def save_comment(cls, data):
         query = "INSERT INTO comments (comment, user_id, fact_id) VALUES (%(comment)s, %(user_id)s, %(fact_id)s);"
         return connectToMySQL('did_you_know').query_db(query,data)
-    
+
+# ---------------------------------------------------
+# DELETE A COMMENT
+
     @classmethod
     def delete_comment(cls, data):
         query = "DELETE FROM comments WHERE id = %(id)s;"
         result = connectToMySQL('did_you_know').query_db(query,data)
         return result
-
-    # @classmethod
-    # def get_comment_id(cls,id):
-    #     query = "SELECT * FROM facts LEFT JOIN users ON facts.user_id = users.id LEFT JOIN comments ON comments.fact_id = facts.id WHERE facts.id = %(id)s;"
-    #     results = connectToMySQL('did_you_know').query_db(query,{'id': id})
-        
-    #     if not results:
-    #         return False
-        
-    #     results = results[0]
-    #     this_comment = cls(results)
-    #     data = {
-    #             # "user_id": results['comments.user_id'],
-    #             "fact_id": results['comments.fact_id'],
-    #             "comment": results['comment'],
-    #             "created_at": results['comments.created_at'],
-    #             "updated_at": results['comments.updated_at']
-    #     }
-    #     this_comment.commenter = fact.Fact(data)
-    #     return this_comment

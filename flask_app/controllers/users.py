@@ -4,25 +4,25 @@ from flask import render_template,redirect,request,session,flash
 from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt(app)
 
+# ---------------------------------------------------
+# INDEX PAGE
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
+# ---------------------------------------------------
+# DASHBOARD PAGE - USERS CAN LOGIN AND RESGISTER
+
 @app.route("/dashboard")
 def dashboard():
-    # if "user_id" not in session:
-    #     return redirect("/logout")
-    # data = {
-    #     'id': session['user_id']
-    # }
     return render_template("dashboard.html")
+
+# ---------------------------------------------------
+# USER REGISTER
 
 @app.route("/submit", methods=["POST"])
 def submit():
-    # if request.form["action"] == "register":
-    #     is_valid = User.is_valid_user(request.form)
-    # if not is_valid:
-    #     return redirect('/dashboard')
     if not User.is_valid_user(request.form):
         return redirect('/dashboard')
     data={
@@ -30,25 +30,27 @@ def submit():
         "email":request.form["email"],
         "password":bcrypt.generate_password_hash(request.form["password"])
     }
-
     id=User.save(data)
     session['user_id'] = id
     return redirect("/show")
 
+# ---------------------------------------------------
+# USER LOGIN
+
 @app.route('/login', methods=['POST'])
 def login():
-    user = User.get_by_email(request.form)
+    user = User.get_by_email({"email":request.form['email']})
     if not user:
         flash("Invalid Email","login")
         return redirect('/dashboard')
-    # if not bcrypt.check_password_hash(user.password, request.form['password']):
-    if not bcrypt.generate_password_hash(request.form['password']):
+    if not bcrypt.check_password_hash(user.password, request.form['password']):
         flash("Invalid Password","login")
         return redirect('/dashboard')
     session['user_id'] = user.id
     return redirect('/show')
 
-
+# ---------------------------------------------------
+# USER LOGOUT
 
 @app.route("/logout")
 def logout():

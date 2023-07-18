@@ -62,7 +62,7 @@
                 {% if session['user_id'] == fact.poster.id %}
                 <a href="/show/{{fact.id}}" class="view_button">View</a>
                 <a href="/edit/{{fact.id}}" class="edit_button">Edit</a>
-                <a href="/delete/{{fact.id}}" class="delete_button">Delete</a>
+                <a href="/delete/fact/{{fact.id}}" class="delete_button">Delete</a>
                 {% endif %}
             </div>
             <!-- -----SHOW ALL 3 BUTTONS (VIEW, EDIT, AND DELETE) IF THE FACT POSTED BY LOGGED-IN USER ----- -->

@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----LINK WITH CSS FILE----- --> 
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style_view.css')}}">
+    <!-- -----LINK WITH CSS FILE----- --> 
+
     <title>View Each Fact</title>
 </head>
 
 <body>
+    <!-- -----TOP PART---- --> 
     <div id="show_each_fact">
         <div class="top_buttons">
             <a href="/show" class="home_button">Home</a><br>
             <a href="/logout" class="logout_button">Logout</a>
         </div>
+
+        <!-- -----SHOW ONE FACT---- -->
         <div class="show_container">
             <div class="show_one">
                 {% if session['user_id'] != fact.poster.id %}
@@ -27,42 +34,50 @@
                 <div class="two_buttons">
                     {% if session['user_id'] == fact.poster.id %}
                     <a href="/edit/{{fact.id}}" class="edit_button">Edit</a>
-                    <a href="/delete/{{fact.id}}" class="delete_button">Delete</a>
+                    <a href="/delete/fact/{{fact.id}}" class="delete_button">Delete</a>
                     {% endif %}
                 </div>
                 <p class="resource">Resource: <span>{{fact.resource}}</span></p><br>
             </div>
         </div>
-        <a href="/comment" class="comment_button">Comment</a>
+        <!-- -----SHOW ONE FACT---- -->
+
+    <!-- -----TOP PART---- --> 
+
+    <!-- -----BOTTOM PART---- --> 
+        <a href="/comment/{{fact.id}}" class="comment_button">Comment</a>
+
+        <!-- -----SHOW ALL COMMENTS---- --> 
         <div class="comments">
-            <p>Hello</p>            
-            {% for comment in fact.comments %}
-            {{comment.comment}}
+            <hr>            
 
-            <!-- {% for comment in fact.comments %} -->
+            <!-- ALL COMMENTS -->
+            <h4>{{comment.comment}}</h4>
+            <!-- ALL COMMENTS -->
 
-            <!-- <hr>
-            <h2>{{comment.comment}}</h2>
-            {% if session['user_id'] != comment.commenter.id %}                
-            <p><strong>Posted by:</strong> {{comment.commenter.user_name}}</p>
-            {% else %}
-            <p><strong>Posted by:</strong> Me</p>
-            {% endif %}
+            <!-- -----SHOW THE NAME OF THE COMMENTER - IF THE COMMENT POSTED BY LOGGED-IN USER - SHOW "Me"---- -->           
+            {% for comment in fact.comments %}            
             {% if session['user_id'] != comment.commenter.id %}
-            <div class="v_button">
-                <a href="/show/{{fact.id}}" class="view_button">View</a>
-            </div>
+            <p>{{comment.commenter.user_name}}</p>
+            {% else %}
+            <p>Me</p>
             {% endif %}
-            <div class="three_buttons">
+            <!-- -----SHOW THE NAME OF THE COMMENTER - IF THE COMMENT POSTED BY LOGGED-IN USER - SHOW "Me"---- --> 
+
+            <!-- -----SHOW ALL THE DELETE BUTTON IF THE COMMENT POSTED BY LOGGED-IN USER ----- -->
+            <div class="commenter_delete_button">
                 {% if session['user_id'] == comment.commenter.id %}
-                <a href="/show/{{fact.id}}" class="view_button">View</a>
-                <a href="/edit/{{fact.id}}" class="edit_button">Edit</a>
-                <a href="/delete/{{fact.id}}" class="delete_button">Delete</a>
+                <a href="/delete/comment/{{comment.id}}" class="delete_button">Delete</a>
                 {% endif %}
             </div>
-            {% endfor %} -->
             {% endfor %}
+            <!-- -----SHOW ALL THE DELETE BUTTON IF THE COMMENT POSTED BY LOGGED-IN USER ----- -->
+
         </div>
+        <!-- SHOW ALL COMMENTS -->
+
+    <!-- -----BOTTOM PART---- --> 
+
     </div>
 
 </body>

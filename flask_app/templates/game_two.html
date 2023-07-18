@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----LINK WITH CSS FILE----- -->
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style_game.css')}}">
+    <!-- -----LINK WITH CSS FILE----- -->
+
     <title>Game</title>
 </head>
 
@@ -15,24 +19,27 @@
             <a href="/show" class="home_button">Home</a><br>
             <a href="/logout" class="logout_button">Logout</a>
         </div>
+
+        <!-- -----GAME SECTION----- -->
         <div class="game_container">
             <div class="question">
-                <h3>What's the capital city of Australia?</h3>
-                <form action="/game/1" method="post" class="answer_input">
+                <h3>What is the most popular item that Walmart sell?</h3>
+                <form action="/game/2" method="post" class="answer_input">
                     <div class="answers">
-                    <input type="radio" id="answer_one" value="answer_one">
-                    <label for="answer_one">Sydney</label>
-                    <input type="radio" id="answer_two" value="answer_one" name="answer_2">
-                    <label for="answer_two">Canberra</label>
-                    <input type="radio" id="answer_three" value="answer_one">
-                    <label for="answer_three">Melbourne</label>
-                    <input type="radio" id="answer_four" value="answer_one">
-                    <label for="answer_four">Perth</label>
+                        <input type="radio" id="answer_one" name="answer" value="Chewing Gum">
+                        <label for="answer_one">Chewing Gum</label>
+                        <input type="radio" id="answer_two" name="answer" value="Pencils">
+                        <label for="answer_two">Pencils</label>
+                        <input type="radio" id="answer_three" name="answer" value="Water Bottles">
+                        <label for="answer_three">Water Bottles</label>
+                        <input type="radio" id="answer_four" name="answer" value="Bananas">
+                        <label for="answer_four">Bananas</label>
                     </div>
                     <input type="submit" value="Submit" class="submit_button">
                 </form>
             </div>
         </div>
+        <!-- -----GAME SECTION----- -->
+    
     </div>
 </body>
-</html>

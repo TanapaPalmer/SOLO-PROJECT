@@ -34,7 +34,8 @@
         <!-- COMMENT SECTION -->
         <div class="comment_container">
             <form action="/comment/process" method="post" class="form">
-                <!-- <input type="hidden" name="fact_id" value="{{facts.id}}"> -->
+                <input type="hidden" name="fact_id" value="{{fact.id}}">
+                <input type="hidden" name="user_id" value="{{user.id}}">
                 <h2 class="head_text">Comment</h2>
                 <div class="form_group">
                     <label for="comment"><strong>Comment:</strong></label>
@@ -45,7 +46,7 @@
                     <a href="/show" class="cancel_button">Cancel</a>
                     <input type="submit" value="Submit" class="submit_button">
                 </div>
-            </form>                
+            </form>
         </div>
         <!-- COMMENT SECTION -->
 
@@ -54,4 +55,3 @@
 </body>
 
 </html>
-

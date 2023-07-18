@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----LINK WITH CSS FILE----- -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style_game.css')}}">
+    <!-- -----LINK WITH CSS FILE----- -->
+
+    <title>Game</title>
+</head>
+
+<body>
+    <div id="game">
+        <div class="top_buttons">
+            <a href="/show" class="home_button">Home</a><br>
+            <a href="/logout" class="logout_button">Logout</a>
+        </div>
+
+        <!-- -----GAME SECTION----- -->
+        <div class="game_container">
+            <div class="question">
+                <h3>What country has more cats per person than any other country in the world?</h3>
+                <form action="/game/3" method="post" class="answer_input">
+                    <div class="answers">
+                        <input type="radio" id="answer_one" name="answer" value="Mexico">
+                        <label for="answer_one">Mexico</label>
+                        <input type="radio" id="answer_two" name="answer" value="China">
+                        <label for="answer_two">China</label>
+                        <input type="radio" id="answer_three" name="answer" value="New Zealand">
+                        <label for="answer_three">New Zealand</label>
+                        <input type="radio" id="answer_four" name="answer" value="South Africa">
+                        <label for="answer_four">South Africa</label>
+                    </div>
+                    <input type="submit" value="Submit" class="submit_button">
+                </form>
+            </div>
+        </div>
+        <!-- -----GAME SECTION----- -->
+        
+    </div>
+</body>
