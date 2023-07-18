@@ -94,6 +94,13 @@ h3{
     transition-property: box-shadow;
     font-size: 15px;
 }
+.question {
+    width: 700px;
+}
+.top_buttons {
+    display: flex;
+    justify-content: end;
+}
 /* GAME SECTION */
 
 /* --------------------------------------------------- */

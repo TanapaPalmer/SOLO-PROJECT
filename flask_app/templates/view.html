@@ -50,13 +50,13 @@
         <!-- -----SHOW ALL COMMENTS---- --> 
         <div class="comments">
             <hr>            
+            {% for comment in fact.comments %} 
 
             <!-- ALL COMMENTS -->
             <h4>{{comment.comment}}</h4>
             <!-- ALL COMMENTS -->
 
             <!-- -----SHOW THE NAME OF THE COMMENTER - IF THE COMMENT POSTED BY LOGGED-IN USER - SHOW "Me"---- -->           
-            {% for comment in fact.comments %}            
             {% if session['user_id'] != comment.commenter.id %}
             <p>{{comment.commenter.user_name}}</p>
             {% else %}
