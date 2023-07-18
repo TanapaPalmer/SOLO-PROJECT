@@ -25,14 +25,13 @@
 
   <div>
   <p><strong>HOW MY PROJECT LOOKS LIKE</strong></p>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/b3dd91f1-ba6d-4594-a55c-3cfe23cb88b8" alt="html" height="100"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/a0fb21e4-7608-40e2-99d9-32a288f88af2" alt="html" height="100"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/6f344517-fcf9-4550-adb4-dab38d67b5dd" alt="html" height="100"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f3efc3b7-6f47-4c99-84e0-e9d9c2b48413" alt="html" height="100"/>
-    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f76cd9b2-3804-4d96-a895-19069e682b11" alt="html" height="100"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/b3dd91f1-ba6d-4594-a55c-3cfe23cb88b8" alt="html" height="150"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/a0fb21e4-7608-40e2-99d9-32a288f88af2" alt="html" height="150"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/6f344517-fcf9-4550-adb4-dab38d67b5dd" alt="html" height="150"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/d6f3c8d1-061f-409a-abf4-5ee68e3c2f11" alt="html" height="150"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f3efc3b7-6f47-4c99-84e0-e9d9c2b48413" alt="html" height="150"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/f76cd9b2-3804-4d96-a895-19069e682b11" alt="html" height="150"/>
   </div>
 </div>
-
-
 
 
