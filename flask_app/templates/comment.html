@@ -20,7 +20,7 @@
         </div>
 
         <!-- -----FLASH MESSAGES ALERT----- -->
-        <div>
+        <div class="alert">
             {% with messages = get_flashed_messages(category_filter=['comment']) %}
             {% if messages %}
             {% for message in messages %}
@@ -33,7 +33,7 @@
 
         <!-- COMMENT SECTION -->
         <div class="comment_container">
-            <form action="/comment/process" method="post" class="form">
+            <form action="/comment/process/{{fact.id}}" method="post" class="form">
                 <input type="hidden" name="fact_id" value="{{fact.id}}">
                 <input type="hidden" name="user_id" value="{{user.id}}">
                 <h2 class="head_text">Comment</h2>

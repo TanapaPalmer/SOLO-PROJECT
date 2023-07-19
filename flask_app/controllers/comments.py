@@ -15,12 +15,12 @@ def comments(id):
     fact = Fact.get_fact_by_id({"id": id})
     return render_template('comment.html', user=user, fact=fact)
 
-@app.route('/comment/process', methods=['POST'])
-def comment_process():
+@app.route('/comment/process/<int:id>', methods=['POST'])
+def comment_process(id):
     if 'user_id' not in session:
         return redirect('/dashboard')
     if not Comment.validate_comment(request.form):
-        return redirect('/comment')
+        return redirect(f'/comment/{id}')
     data = {
         'user_id' : session['user_id'],  
         'fact_id' : request.form['fact_id'],  
