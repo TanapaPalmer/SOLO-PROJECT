@@ -28,10 +28,12 @@
   <hr>
 
   <div>
-  <p><strong>HOW MY PROJECT LOOKS LIKE:</strong></p>
-[<source src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/d2d9d7c8-b222-4076-8a73-de3c747396ef" width="300" height="150"/>]
+    <p><strong>HOW MY PROJECT LOOKS LIKE:</strong></p>
+    <video width="300" height="150" src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/d2d9d7c8-b222-4076-8a73-de3c747396ef"></video>
   </div>
 </div>
+
+
 
 
 
