@@ -12,7 +12,7 @@
     <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/0245007f-f8da-4a0f-a2e1-b1d00d8bf79f" alt="project_picture" height="100"/>
   </div>
   <br>
-  <p>"DID YOU KNOW PROJECT" is one of my final Solo Project and an exciting project using Python. It uses MySQL to store a database of interesting facts displayed on an interactive HTML page, allowing users to explore and enjoy content posted by others. Users can create, edit, delete, and comment on posts, making it engaging.</p>
+  <p>"DID YOU KNOW" is one of my final Solo Project and an exciting project using Python. It uses MySQL to store a database of interesting facts displayed on an interactive HTML page, allowing users to explore and enjoy content posted by others. Users can create, edit, delete, and comment on posts, making it engaging.</p>
   <br>
   <p>The project offers specific routes for functions like easy post editing and a fun Fact Game. It aims to entertain and expand users' knowledge through shared facts.</p>
   <br>
