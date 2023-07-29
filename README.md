@@ -30,11 +30,15 @@
   <div>
   <p><strong>HOW MY PROJECT LOOKS LIKE:</strong></p>
     <video height="300">
-      <source src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/d2d9d7c8-b222-4076-8a73-de3c747396ef" alt="project_video" type="video"/>
+      <source src="" alt="project_video" type="video"/>
     </video>
   </div>
 </div>
 
+[![Watch the video](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/655dd84e-7d84-46bd-a17a-e55179cee202)](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/d2d9d7c8-b222-4076-8a73-de3c747396ef)
+
+[<img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/655dd84e-7d84-46bd-a17a-e55179cee202" width="600" height="300"
+/>](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/d2d9d7c8-b222-4076-8a73-de3c747396ef)
 
 
 
