@@ -29,9 +29,10 @@
 
   <div>
   <p><strong>HOW MY PROJECT LOOKS LIKE:</strong></p>
-[<img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/655dd84e-7d84-46bd-a17a-e55179cee202" width="300" height="150"/>](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/d2d9d7c8-b222-4076-8a73-de3c747396ef)
+[![Watch the video](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/655dd84e-7d84-46bd-a17a-e55179cee202)width="300" height="150"](https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/d2d9d7c8-b222-4076-8a73-de3c747396ef)
   </div>
 </div>
+
 
 
 
