@@ -9,6 +9,7 @@
     <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/b1fdd5c4-09ca-4dc3-9fc8-b07b7570bedc" alt="project_picture" height="100"/>
     <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/bc8a47b3-aed1-4991-b560-17a6f6d965f3" alt="project_picture" height="100"/>
     <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/1d1b39d9-7fdd-4915-86f6-afb7d48e93b0" alt="project_picture" height="100"/>
+    <img src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/0245007f-f8da-4a0f-a2e1-b1d00d8bf79f" alt="project_picture" height="100"/>
   </div>
   <br>
   <p>"DID YOU KNOW PROJECT" is one of my final Solo Project and an exciting project using Python. It uses MySQL to store a database of interesting facts displayed on an interactive HTML page, allowing users to explore and enjoy content posted by others. Users can create, edit, delete, and comment on posts, making it engaging.</p>
@@ -43,9 +44,6 @@
     <video src="https://github.com/TanapaPalmer/SOLO-PROJECT/assets/119079803/d2d9d7c8-b222-4076-8a73-de3c747396ef"></video>
   </div>
 </div>
-
-
-
 
 
 
